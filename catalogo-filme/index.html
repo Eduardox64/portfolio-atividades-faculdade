@@ -1,0 +1,46 @@
+<!-- Objetivo: Criar uma tabela que exiba uma lista de filmes com colunas
+para t ́ıtulo, gˆenero, ano de lan ̧camento e um trailer incorporado.
+Requisitos:
+Criar uma tabela <table> com pelo menos 4 colunas:
+▶ T ́ıtulo do Filme
+▶ Gˆenero
+▶ Ano de Lan ̧camento
+▶ Trailer (usando iframe do YouTube)
+Utilizar <iframe> para incorporar um trailer do YouTube dentro
+da tabela. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pog Filmes</title>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Filmes</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>Título</th>
+                <th>Gênero</th>
+                <th>Ano</th>
+                <th>Trailer</th>
+            </tr>
+            <tr>
+                <td>Avatar</td>
+                <td>Aventura</td>
+                <td>2009</td>
+                <td><iframe src="https://www.youtube.com/embed/5PSNL1qE6VY" allowfullscreen></iframe></td>
+            </tr>
+            <tr>
+                <td>Vingadores</td>
+                <td>Ação</td>
+                <td>2012</td>
+                <td><iframe src="https://www.youtube.com/embed/eOrNdBpGMv8" allowfullscreen></iframe></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

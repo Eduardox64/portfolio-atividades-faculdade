@@ -1,0 +1,108 @@
+<!--
+▶ Nome Completo
+▶ Data de Nascimento
+▶ Gˆenero:
+⋆ Masculino
+⋆ Feminino
+⋆ Outro
+▶ Telefone 
+Informa ̧c ̃oes de Endere ̧co:
+▶ Endere ̧co
+▶ N ́umero
+▶ Complemento
+▶ Bairro
+▶ Cidade
+▶ Estado
+▶ CEP
+Informa ̧c ̃oes de Acesso:
+▶ E-mail
+▶ Senha
+▶ Confirmar Senha
+▶ Aceito os Termos e Condi ̧c ̃oes
+Foto de Perfil:
+▶ Upload de Foto
+Bot ̃oes:
+▶ Enviar
+▶ Limpar -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pog</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="cadastro">Cadastro</h1>
+        <form>
+            <h3 id="informacoes-pessoais">Informações pessoais</h3>
+
+            <label for="nome-completo">Nome completo:</label>
+            <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome completo" required>
+
+            <label for="data-de-nascimento">Data de nascimento:</label>
+            <input type="date" name="data-de-nascimento" id="data-de-nascimento" placeholder="DD/MM/AAAA" required>
+
+            <label for="genero">Gênero:</label>
+            <select name="sexo" id="genero" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" name="telefone" id="telefone" placeholder="Número de telefone" required>
+
+            <h3 id="informacoes-de-edereco">Informações de endereço</h3>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero" placeholder="Número" required>
+
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento" placeholder="Complemento" required>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" id="estado" placeholder="Estado" required>
+
+            <label for="cep">CEP</label>
+            <input type="number" name="cep" id="cep" placeholder="00000-000" required>
+
+            <h3 id="informacoes-de-acesso">Informações de Acesso</h3>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+
+            <label for="confirmar-senha">Confirme a senha</label>
+            <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha" required>
+
+            <label for="aceitar-termos-e-condicoes">Aceito os Termos e Condições</label>
+            <input type="checkbox" name="aceitar-termos-e-condicoes" id="aceitar-termos-e-condicoes" required>
+
+            <h3 id="foto-de-perfil">Foto de perfil</h3>
+
+            <label for="foto-perfil">Sua foto</label>
+            <input type="file" name="foto-perfil" id="foto-perfil" required>
+
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </form>
+    </main>
+</body>
+
+</html>
